@@ -1,5 +1,4 @@
 any_list=[2, 3, 5, 6, 87, 43, 24]
-res=[2,0,0,6,0,0,24]
 def nechet (any_list_arg):
     new_list = []
     my_count = 0
