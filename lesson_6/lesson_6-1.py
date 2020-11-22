@@ -18,3 +18,13 @@ print(new_dict)
 
 print(dict(zip(coin,code)))    # сам в шоке, как получилось. но вариантов перед этим было 14 или 16
 
+
+def new_dict():
+    new_dict = {}
+    for i in code:
+        new_index = code.index(i)
+        i2 = coin[new_index]
+        new_dict[i2] = i
+    return new_dict
+print(new_dict())
+
