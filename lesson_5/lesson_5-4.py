@@ -8,7 +8,7 @@ def nechet (any_list_arg):
             new_list.append(0)
         else:
             new_list.append(num)
-    print(new_list, my_count)
+print(new_list, my_count)
 def nechet_2 (any_list_arg_2):
     my_count = 0
     for index in range(len(any_list_arg_2)):
