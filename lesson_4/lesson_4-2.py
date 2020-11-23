@@ -8,5 +8,5 @@ while new_number != 0:
     all_number.append(new_number)
     if new_number == 0:
         break
-all_number_1 = all_number[:-1]
+all_number_1 = all_number[:-1]1
 print(len(all_number_1), sum(all_number_1), sum(all_number_1)/len(all_number_1), max(all_number_1))

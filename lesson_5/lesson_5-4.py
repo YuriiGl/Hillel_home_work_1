@@ -20,9 +20,3 @@ def nechet_2 (any_list_arg_2):
 nechet_2(any_list)
 
 nechet(any_list)
-# print(len(any_list))
-# print(range(len(any_list)))
-# for i in range(len(any_list)):
-#     print(i, any_list[i])
-#     any_list[i]=0
-# print(any_list)
