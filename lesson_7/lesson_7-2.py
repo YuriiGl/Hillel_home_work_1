@@ -1,5 +1,5 @@
 any_temp = float(input('Введите температуру: '))
-any_sist = str(input('Введите систему измерения температуры (C, K, F):'))
+any_sist = str(input('Введите систему измерения температуры (C, K, F): '))
 if any_sist == 'C':
     print(str(any_temp),'C   ', str(any_temp + 273.15),'K   ', str(any_temp * 1.8 + 32), 'F   ' )
 elif any_sist == 'K':
