@@ -8,14 +8,18 @@ def return_weather(days=1):
     r = requests.get(URL, data)
     return r.json()
 result = return_weather(any_days)
-def write_file():
-    print()
 print('\tдата\t\t\tтемпература днем\tТемпература ночью\tПо ощущениям днем\tПо ощущениям ночью')
 for day in result['list']:
     date = day['dt']
     print(datetime.datetime.fromtimestamp(date).strftime("%d-%m-%Y"), '\t', '\t', '\t', '\t', day['temp']['day'],'\t', '\t',  '\t', '\t', day['feels_like']['day'],'\t' '\t', '\t', '\t', '\t',
          day['temp']['night'],'\t' '\t', '\t', '\t', day['feels_like']['night'] )
 
-print('done')
-
 print(datetime.datetime.today())
+namefile = str(datetime.datetime.today().strftime("%d-%m-%Y")) + '-Odesa-' + str(any_days) + '-days-weather-forecast.txt'
+with open(namefile, 'w', encoding = 'utf-8') as f:
+    f.write('Дата\t\tTемпература днем\tПо ощущениям днем\tТемпература ночью\tПо ощущениям ночью\n')
+    for day in result['list']:
+        date = day['dt']
+        f.write(str(datetime.datetime.fromtimestamp(date).strftime("%d-%m-%Y")) + '\t\t\t\t' +
+                     str(day['temp']['day']) + '\t\t\t\t' + str(day['feels_like']['day']) + '\t\t\t\t\t' +
+         str(day['temp']['night']) + '\t\t\t\t' + str(day['feels_like']['night']) + '\n')
