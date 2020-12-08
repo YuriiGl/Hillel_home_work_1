@@ -1,5 +1,3 @@
-
-
 win = int(input("Win: "))
 draw = int(input("Draw: "))
 loss = int(input("loss: "))
