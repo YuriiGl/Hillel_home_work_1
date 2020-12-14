@@ -5,6 +5,11 @@
 #    123
 #    1234
 #    12345
-for i in n;
-    0 < n =<9
+
+
+n = range(1,9)
+for i in n:
+    i = [0]
+    print(i, i + 1)
+
 

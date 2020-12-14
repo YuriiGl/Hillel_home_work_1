@@ -2,7 +2,7 @@ import datetime
 import json
 import argparse
 import requests
-from pprint import pprint as pp
+f
 
 def symbols():
     with open('symbols.json', 'r') as file:
