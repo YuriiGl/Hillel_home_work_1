@@ -7,9 +7,13 @@
 #    12345
 
 
-n = range(1,9)
-for i in n:
-    i = [0]
-    print(i, i + 1)
 
 
+n = int(input('Введите любое натуральное число до 9: '))
+if n <= 9:
+    for i in range(1, n + 1):
+        for k in range(1, i + 1):
+            print(k, end='')
+        print()
+else:
+    print('Error: Введенное число больше 9')
