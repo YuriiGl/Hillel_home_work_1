@@ -2,24 +2,28 @@
 # (та которая читается одинаково с любой стороны), пример:
 # ШАЛАШ, КАЗАК, ДЕД, ДОХОД, 13231 и т.д.
 
-any_word = list(input('Введите любое слово: '))
-#any_word = any_word.split()
-#if any_word == any_word.reversed():
-print(any_word.split())
-# else:
-#     print('no')
-#if any_word ==
-#any_index = len(any_word)
+any_word = str(input('Введите любое слово: '))
+new_word = any_word[::-1]
+if any_word == new_word:
+  print('Это слово палиндром.')
+else:
+  print('Это слово не является палиндромом.')
 
 
-#for i in any_word:
- #    i ==
-#print(any_index)
-#next(
+any_word = str(input('Введите любое слово: '))
+len_word = len(any_word)
+i = 0
+len_word = len_word - 1
+k = 0
+while len_word - i >= i:
+    if any_word[len_word - i] == any_word[i]:
+        i += 1
+    else:
+        k = 1
+        break
+if k == 1:
+  print('Это слово не является палиндромом')
+else:
+  print("Это слово палиндром")
 
 
-# def sravnenie():
-#
-#     print('Это слово палиндром!')
-# else:
-#     print('Это слово палиндром!')
