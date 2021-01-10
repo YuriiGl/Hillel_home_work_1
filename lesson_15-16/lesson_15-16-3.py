@@ -14,7 +14,7 @@
 #         return True
 #     else:
 #         return False
-#
+#Вариант 1, не доделан. Поскольку тема:"Регулярные выражения", второй вариант сделан по теме.
 # def check_passw(passw):
 #     for lit in passw:
 #         lowwers = False
@@ -32,4 +32,4 @@ import re
 any_str = input('Введите пароль: ')
 pattern = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$#@+=-])[a-zA-Z0-9$#@+=-]{8,}$'
 match = re.fullmatch(pattern, any_str)
-print('YES' if match else 'NO')
+print('Password is correct' if match else 'the password was entered incorrectly')
