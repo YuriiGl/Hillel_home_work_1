@@ -6,10 +6,6 @@
 
 import re
 any_num = input('Введите предполагаемый номер: ')
-
-def conrol_num():
-    patern = r'[A-X]{2}\d{4}[A-X]{2}'
-    a = re.fullmatch(patern, any_num)
-    if patern in any_num:
-        print('Это украинский номер машины.')
-    return conrol_num()
+pattern = r'\b[АВЕІКМНОРСТХ|ABEIKMHOPCTX]{2}\d{4}[АВЕІКМНОРСТХ|ABEIKMHOPCTX]{2}\b'
+match = re.fullmatch(pattern, any_num)
+print('YES'if match else 'NO')
