@@ -1,6 +1,5 @@
 import csv
 
-
 class Product:
     def __init__(self, product_name, product_type, price):
         self.product_name = product_name
@@ -74,7 +73,6 @@ class Store:
 
     def add_new_product(self, product):
         self.ware_house.append(product)
-
 
 my_store = Store()
 
