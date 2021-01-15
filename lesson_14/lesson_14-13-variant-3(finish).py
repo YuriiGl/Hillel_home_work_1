@@ -24,7 +24,6 @@ class Product:
         else:
             print('Странный продукт: ' + self.product_name + ', цена: ' + str(self.price) + 'грн')
 
-
 class Store:
     def __init__(self):
         self.ware_house = []
@@ -35,16 +34,10 @@ class Store:
         self.ware_house.extend([product] * count)
 
     def inventory(self):
-        with open('/Users/katerinaglushchenko/Downloads/invertory.csv', 'r') as inventory:
+        with open('invertory.csv', 'r') as inventory:
             reader = csv.DictReader(inventory)
             for row in reader:
                 self.add_product(row, 5)
-
-    def order(self):
-        pass
-
-    def balance_day(self):
-        pass
 
     def print_all_products(self):
         for p in self.ware_house:
@@ -96,7 +89,7 @@ for p in coffee:
 
 p1 = Product("Латте 1", "coffee", 60.0)
 my_store.add_new_product(Product("Латте 1", "coffee", 60.0))
-my_store.print_all_products()  # вот это много печатает - если мешает можно закоментировать везде по коду эту функцию
+my_store.print_all_products()
 
 c = my_store.total_cost()
 print("total cost: ", c)
