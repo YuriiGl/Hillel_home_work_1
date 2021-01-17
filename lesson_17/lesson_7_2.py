@@ -1,9 +1,9 @@
 def temperature(sist, temp):
 	if sist == 'C':
 		return (temp, temp + 273.15, temp * 1.8 + 32)
-	elif any_sist == 'K':
+	elif sist == 'K':
 		return (temp - 273.15, temp, temp * 1.8 - 459.67)
-	elif any_sist == 'F':
+	elif sist == 'F':
 		return ((temp - 32)*1.8, (temp + 459.67)/1.8, temp)
 	else:
 		print('Неправильный ввод!')
